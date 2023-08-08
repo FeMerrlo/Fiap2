@@ -102,11 +102,10 @@ declare
 --Processamento
     re1 number := restante * juros1;
     re1e2 number := re1 * 6;
-    rele3 number :=
-    re2 number := re1 + v1;
-    re3 number := re2 / 10;
+    rele3 number := rele2 + 8000;
+    rele4 number := rele3 / 6;
 begin
 --Saida de dados
-    dbms_output.put_line ('resultado das parcelas conforme tx e prazo pré-estabelecidos: '||re3);
+    dbms_output.put_line ('resultado das parcelas conforme tx e prazo pré-estabelecidos: '||re1e4);
 end;
 -- Fim do programa
