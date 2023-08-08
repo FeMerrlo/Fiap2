@@ -91,13 +91,18 @@ end;
 declare
 -- declaração de vm
 -- uso de variaveis de substituição
-    v1 number :=&Valor_1;
-    v2 number :=0.03;
-    v3 number := 10;
+    restante number :=8000;
+    juros1 :=1.10;
+    juros2 :=1.15;
+    juros3 :=1.20;
+    par1 number := 6;
+    par2 number := 12;
+    par3 number := 18
     
 --Processamento
-    re number := v1 * v2 ;
-    re1 number := re * 10;
+    re1 number := restante * juros1;
+    re1e2 number := re1 * 6;
+    rele3 number :=
     re2 number := re1 + v1;
     re3 number := re2 / 10;
 begin
